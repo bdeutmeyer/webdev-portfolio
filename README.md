@@ -1,5 +1,8 @@
 # webdev-portfolio
 
+---see activity 22 for file/folder structure
+---on each card, maybe in addition to live link icon and github icon, have an info i that renders a tooltip with a brief description
+
 # 20 React: React Portfolio
 
 ## Your Task
