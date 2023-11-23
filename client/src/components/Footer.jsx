@@ -1,4 +1,4 @@
-import reactLogo from '../assets/react.svg'
+import reactLogo from '../assets/logos/react.svg'
 
 function Footer() {
     return (
