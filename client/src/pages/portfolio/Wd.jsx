@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import weatherDashboardImg from '../../assets/images/weather-dashboard-screenshot.png';
 import ghLogo from '../../assets/logos/github-mark.svg';
 import infoI from '../../assets/logos/info-solid.svg';
@@ -11,7 +11,7 @@ export default function WeatherDashboard() {
 
     return (
         <Col>
-        <Card inverse className='m-2' onMouseEnter={() => setWdHover(true)} onMouseLeave={() => setWdHover(false)}>
+        <Card inverse className='m-3' onMouseEnter={() => setWdHover(true)} onMouseLeave={() => setWdHover(false)}>
             <CardImg
                 alt="Screenshot of Weather Dashboard site"
                 src={weatherDashboardImg}

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import gameOnImg from '../../assets/images/GAME-ON-screenshot.png';
 import ghLogo from '../../assets/logos/github-mark.svg';
 import infoI from '../../assets/logos/info-solid.svg';
@@ -11,7 +11,7 @@ export default function GameOn() {
 
     return (
         <Col>
-            <Card inverse className='m-2' onMouseEnter={() => setGoHover(true)} onMouseLeave={() => setGoHover(false)}>
+            <Card inverse className='m-3' onMouseEnter={() => setGoHover(true)} onMouseLeave={() => setGoHover(false)}>
                 <CardImg
                     alt="Screenshot of GAME ON site"
                     src={gameOnImg}
