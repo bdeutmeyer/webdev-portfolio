@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import witmImg from '../../assets/images/witm-screenshot.png';
 import ghLogo from '../../assets/logos/github-mark.svg';
 import infoI from '../../assets/logos/info-solid.svg';
@@ -11,7 +11,7 @@ export default function WhatsInThisMeal() {
 
     return (
         <Col>
-        <Card inverse className='m-2' onMouseEnter={() => setWitmHover(true)} onMouseLeave={() => setWitmHover(false)}>
+        <Card inverse className='m-3' onMouseEnter={() => setWitmHover(true)} onMouseLeave={() => setWitmHover(false)}>
             <CardImg
                 alt="Screenshot of What's in This Meal? site"
                 src={witmImg}

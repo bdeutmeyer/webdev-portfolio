@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import noteTakerImg from '../../assets/images/note-taker-screenshot.png';
 import ghLogo from '../../assets/logos/github-mark.svg';
 import infoI from '../../assets/logos/info-solid.svg';
@@ -11,7 +11,7 @@ export default function NoteTaker() {
 
     return (
         <Col>
-        <Card inverse className='m-2' onMouseEnter={() => setNtHover(true)} onMouseLeave={() => setNtHover(false)}>
+        <Card inverse className='m-3' onMouseEnter={() => setNtHover(true)} onMouseLeave={() => setNtHover(false)}>
             <CardImg
                 alt="Screenshot of Note Taker site"
                 src={noteTakerImg}

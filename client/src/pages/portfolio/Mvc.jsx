@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import mvcBlogImg from '../../assets/images/mvc-tech-blog-screenshot.png';
 import ghLogo from '../../assets/logos/github-mark.svg';
 import infoI from '../../assets/logos/info-solid.svg';
@@ -12,7 +12,7 @@ export default function MvcTechBlog() {
     return (
         <>
             <Col>
-                <Card inverse className='m-2' onMouseEnter={() => setMvcHover(true)} onMouseLeave={() => setMvcHover(false)}>
+                <Card inverse className='m-3' onMouseEnter={() => setMvcHover(true)} onMouseLeave={() => setMvcHover(false)}>
                     <CardImg
                         alt="Screenshot of MVC Tech Blog site"
                         src={mvcBlogImg}

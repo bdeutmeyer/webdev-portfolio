@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import jsQuizImg from '../../assets/images/js-quiz-screenshot.png';
 import ghLogo from '../../assets/logos/github-mark.svg';
 import infoI from '../../assets/logos/info-solid.svg';
@@ -11,7 +11,7 @@ export default function JavaScriptQuiz() {
 
     return (
         <Col>
-        <Card inverse className='m-2' onMouseEnter={() => setJsqHover(true)} onMouseLeave={() => setJsqHover(false)}>
+        <Card inverse className='m-3' onMouseEnter={() => setJsqHover(true)} onMouseLeave={() => setJsqHover(false)}>
             <CardImg
                 alt="Screenshot of JavaScript Quiz site"
                 src={jsQuizImg}
