@@ -50,4 +50,5 @@
 
 .hidden-link:hover {
   font-weight: bolder;
+  box-shadow: 4px;
 }
