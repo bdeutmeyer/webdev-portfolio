@@ -17,16 +17,18 @@ export default function JavaScriptQuiz() {
                 src={jsQuizImg}
                 className='w-100 h-auto'
             />
-            {jsqHover ? <CardImgOverlay className="card-hover p-2">
-                <CardLink href="https://bdeutmeyer.github.io/javascript-quiz//">
-                    <CardTitle tag="h5">
+            <div className='container p-3'>
+            {jsqHover ? <CardImgOverlay className="row card-hover">
+                <CardLink href="https://bdeutmeyer.github.io/javascript-quiz//" className='row text-decoration-none'>
+                    <CardTitle tag="h5" className='text-black fw-bold fs-4 spectral pt-3 border border-black rounded'>
                         JavaScript Quiz site
                     </CardTitle>
                 </CardLink>
-                <CardLink href="https://github.com/bdeutmeyer/javascript-quiz">
+                <div className='row'>
+                <CardLink href="https://github.com/bdeutmeyer/javascript-quiz" className='col w-25'>
                     <img src={ghLogo} alt="GitHub Icon" />
                 </CardLink>
-                <a href="#" id="aboutJSQ">
+                <a href="#" id="aboutJSQ" className='col w-25'>
                     <img src={infoI} alt="Info" className='w-25' /></a>
                 <Tooltip
                     autohide
@@ -34,9 +36,12 @@ export default function JavaScriptQuiz() {
                     target="aboutJSQ"
                     toggle={toggleJSQ}
                 >
-                    Hello world!
+                    The JavaScript Quiz site was an early bootcamp project (week 2!). It utilizes bare bones HTML and CSS, and vanilla JavaScript to dynamically render elements to the page.
                 </Tooltip>
+                </div>
             </CardImgOverlay> : <CardImgOverlay id="aboutJSQ"></CardImgOverlay>}
+            </div>
+
         </Card>
     </Col>
     )

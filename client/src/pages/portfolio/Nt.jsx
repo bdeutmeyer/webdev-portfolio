@@ -17,16 +17,18 @@ export default function NoteTaker() {
                 src={noteTakerImg}
                 className='w-100 h-auto'
             />
-            {ntHover ? <CardImgOverlay className="card-hover p-2">
-                <CardLink href="https://lit-ridge-70963-de8199e02790.herokuapp.com/">
-                    <CardTitle tag="h5">
+            <div className='container p-3'>
+            {ntHover ? <CardImgOverlay className="row card-hover">
+                <CardLink href="https://lit-ridge-70963-de8199e02790.herokuapp.com/" className='row text-decoration-none'>
+                    <CardTitle tag="h5" className='text-black fw-bold fs-4 spectral pt-3 border border-black rounded'>
                         Note Taker site
                     </CardTitle>
                 </CardLink>
-                <CardLink href="https://bdeutmeyer.github.io/javascript-quiz/">
+                <div className='row'>
+                <CardLink href="https://bdeutmeyer.github.io/javascript-quiz/" className='col w-25'>
                     <img src={ghLogo} alt="GitHub Icon" />
                 </CardLink>
-                <a href="#" id="aboutNT">
+                <a href="#" id="aboutNT" className='col w-25'>
                     <img src={infoI} alt="Info" className='w-25' /></a>
                 <Tooltip
                     autohide
@@ -34,9 +36,12 @@ export default function NoteTaker() {
                     target="aboutNT"
                     toggle={toggleNT}
                 >
-                    Hello world!
+                    The Note Taker application was one of my first backend projects. The frontend code was provided by the bootcamp curriculum.
                 </Tooltip>
+                </div>
             </CardImgOverlay> : <CardImgOverlay id="aboutNT"></CardImgOverlay>}
+            </div>
+
         </Card>
     </Col>
     )
