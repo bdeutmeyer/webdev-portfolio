@@ -11,13 +11,13 @@ export default function GameOn() {
 
     return (
         <Col>
-            <Card inverse className='m-3' onMouseEnter={() => setGoHover(true)} onMouseLeave={() => setGoHover(false)}>
+            <Card inverse className='m-3 mt-5' onMouseEnter={() => setGoHover(true)} onMouseLeave={() => setGoHover(false)}>
                 <CardImg
                     alt="Screenshot of GAME ON site"
                     src={gameOnImg}
                     className='w-100 h-auto'
                 />
-                {goHover ? <CardImgOverlay className="bg-success-subtle p-2">
+                {goHover ? <CardImgOverlay className="card-hover p-2">
                     <CardLink href="https://grisly-coffin-11200-fb183baf5ee2.herokuapp.com/">
                         <CardTitle tag="h5">
                             GAME ON site
@@ -33,8 +33,9 @@ export default function GameOn() {
                         isOpen={gameOnTooltip}
                         target="aboutGameOn"
                         toggle={toggleGO}
+                        data-bs-delay='{"show": 0, "hide":3000}'
                     >
-                        Hello world!
+                        GAME ON! serves as a portal to free online games. Users can see all available games, search by title, search by genre, and access direct links to each game for immediate play. If logged in, they can save games to their user dashboard. The site was a group endeavor; Beth's teammates were <a href="https://github.com/vladesovc" className='hidden-link'>Corey Vladesov</a>, <a href="https://github.com/lizfischstix" className='hidden-link'>Liz Fischenich</a>, and <a href="https://github.com/taycannon" className='hidden-link'>Taylor Cannon.</a>.
                     </Tooltip>
 
                 </CardImgOverlay> : <CardImgOverlay id="aboutGameOn"></CardImgOverlay>}

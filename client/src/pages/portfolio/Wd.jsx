@@ -11,13 +11,13 @@ export default function WeatherDashboard() {
 
     return (
         <Col>
-        <Card inverse className='m-3' onMouseEnter={() => setWdHover(true)} onMouseLeave={() => setWdHover(false)}>
+        <Card inverse className='m-3 mt-5' onMouseEnter={() => setWdHover(true)} onMouseLeave={() => setWdHover(false)}>
             <CardImg
                 alt="Screenshot of Weather Dashboard site"
                 src={weatherDashboardImg}
                 className='w-100 h-auto'
             />
-            {wdHover ? <CardImgOverlay className="bg-success-subtle p-2">
+            {wdHover ? <CardImgOverlay className="card-hover p-2">
                 <CardLink href="https://bdeutmeyer.github.io/weather-dashboard/">
                     <CardTitle tag="h5">
                         Weather Dashboard site

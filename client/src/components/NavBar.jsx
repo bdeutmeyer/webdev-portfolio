@@ -1,7 +1,7 @@
 export default function NavBar({ links }) {
     return (
-      <nav className="navbar navbar-expand-sm bg-secondary">
-        <div className="container-fluid">
+      <nav className="navbar navbar-expand-sm nav-section shadow">
+        <div className="container-fluid ">
           <div 
           // className="collapse navbar-collapse"
            id="navbarSupportedContent">

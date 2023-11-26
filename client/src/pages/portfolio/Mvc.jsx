@@ -12,14 +12,13 @@ export default function MvcTechBlog() {
     return (
         <>
             <Col>
-                <Card inverse className='m-3' onMouseEnter={() => setMvcHover(true)} onMouseLeave={() => setMvcHover(false)}>
+                <Card inverse className='m-3 mt-5' onMouseEnter={() => setMvcHover(true)} onMouseLeave={() => setMvcHover(false)}>
                     <CardImg
                         alt="Screenshot of MVC Tech Blog site"
                         src={mvcBlogImg}
                         className='w-100 h-auto'
                     />
-                    {/* <Tooltip autohide isOpen={mvcHover} target="mvc" toggle={toggleMvcHover}> */}
-                    {mvcHover ? <CardImgOverlay className="bg-success-subtle p-2">
+                    {mvcHover ? <CardImgOverlay className="card-hover p-2">
                         <CardLink href="https://howling-cat-95332-946fe14771a2.herokuapp.com/">
                             <CardTitle tag="h5">
                                 MVC tech blog site

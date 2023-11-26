@@ -11,16 +11,16 @@ export default function JavaScriptQuiz() {
 
     return (
         <Col>
-        <Card inverse className='m-3' onMouseEnter={() => setJsqHover(true)} onMouseLeave={() => setJsqHover(false)}>
+        <Card inverse className='m-3 mt-5' onMouseEnter={() => setJsqHover(true)} onMouseLeave={() => setJsqHover(false)}>
             <CardImg
                 alt="Screenshot of JavaScript Quiz site"
                 src={jsQuizImg}
                 className='w-100 h-auto'
             />
-            {jsqHover ? <CardImgOverlay className="bg-success-subtle p-2">
+            {jsqHover ? <CardImgOverlay className="card-hover p-2">
                 <CardLink href="https://bdeutmeyer.github.io/javascript-quiz//">
                     <CardTitle tag="h5">
-                        Note Taker site
+                        JavaScript Quiz site
                     </CardTitle>
                 </CardLink>
                 <CardLink href="https://github.com/bdeutmeyer/javascript-quiz">
