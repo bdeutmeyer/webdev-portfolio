@@ -11,13 +11,13 @@ export default function NoteTaker() {
 
     return (
         <Col>
-        <Card inverse className='m-3' onMouseEnter={() => setNtHover(true)} onMouseLeave={() => setNtHover(false)}>
+        <Card inverse className='m-3 mt-5' onMouseEnter={() => setNtHover(true)} onMouseLeave={() => setNtHover(false)}>
             <CardImg
                 alt="Screenshot of Note Taker site"
                 src={noteTakerImg}
                 className='w-100 h-auto'
             />
-            {ntHover ? <CardImgOverlay className="bg-success-subtle p-2">
+            {ntHover ? <CardImgOverlay className="card-hover p-2">
                 <CardLink href="https://lit-ridge-70963-de8199e02790.herokuapp.com/">
                     <CardTitle tag="h5">
                         Note Taker site

@@ -8,7 +8,7 @@ function Footer() {
     const [liLogoHover, setLiLogoHover] = useState(false);
     return (
         <>
-            <div className='container-fluid bg-secondary-subtle p-2'>
+            <div className='container-fluid footer-section shadow p-2'>
                 <div className='row d-flex justify-content-center'>
                     <div className='col col-2' onMouseEnter={() => setGhLogoHover(true)} onMouseLeave={() => setGhLogoHover(false)}>
                         <a href="https://github.com/bdeutmeyer">

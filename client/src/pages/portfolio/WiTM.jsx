@@ -11,13 +11,13 @@ export default function WhatsInThisMeal() {
 
     return (
         <Col>
-        <Card inverse className='m-3' onMouseEnter={() => setWitmHover(true)} onMouseLeave={() => setWitmHover(false)}>
+        <Card inverse className='m-3 mt-5' onMouseEnter={() => setWitmHover(true)} onMouseLeave={() => setWitmHover(false)}>
             <CardImg
                 alt="Screenshot of What's in This Meal? site"
                 src={witmImg}
                 className='w-100 h-auto'
             />
-            {witmHover ? <CardImgOverlay className="bg-success-subtle p-2">
+            {witmHover ? <CardImgOverlay className="card-hover p-2">
                 <CardLink href="https://bdeutmeyer.github.io/nutrition-getter/">
                     <CardTitle tag="h5">
                         What's in This Meal? site
