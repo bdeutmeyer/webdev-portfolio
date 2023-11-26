@@ -17,16 +17,18 @@ export default function WhatsInThisMeal() {
                 src={witmImg}
                 className='w-100 h-auto'
             />
-            {witmHover ? <CardImgOverlay className="card-hover p-2">
-                <CardLink href="https://bdeutmeyer.github.io/nutrition-getter/">
-                    <CardTitle tag="h5">
+            <div className='container p-3'>
+            {witmHover ? <CardImgOverlay className="row card-hover">
+                <CardLink href="https://bdeutmeyer.github.io/nutrition-getter/" className='row text-decoration-none'>
+                    <CardTitle tag="h5" className='text-black fw-bold fs-4 spectral pt-3 border border-black rounded'>
                         What's in This Meal? site
                     </CardTitle>
                 </CardLink>
-                <CardLink href="https://github.com/bdeutmeyer/nutrition-getter">
+                <div className='row'>
+                <CardLink href="https://github.com/bdeutmeyer/nutrition-getter" className='col w-25'>
                     <img src={ghLogo} alt="GitHub Icon" />
                 </CardLink>
-                <a href="#" id="aboutWiTM">
+                <a href="#" id="aboutWiTM" className='col w-25'>
                     <img src={infoI} alt="Info" className='w-25' /></a>
                 <Tooltip
                     autohide
@@ -34,9 +36,12 @@ export default function WhatsInThisMeal() {
                     target="aboutWiTM"
                     toggle={toggleWITM}
                 >
-                    Hello world!
+                    The "What's in this Meal?" site utilizes dynamically rendered elements and third-party APIs (Edamam). It is styled using Tailwind CSS. This was a group endeavor; my teammates were <a href="https://github.com/jwhit-commit">Joshua Whitaker</a>, <a href="https://github.com/lopezivan763">Ivan Lopez</a>, and <a href="https://github.com/maxblaul">Max Blaul</a>.
                 </Tooltip>
+                </div>
             </CardImgOverlay> : <CardImgOverlay id="aboutWiTM"></CardImgOverlay>}
+            </div>
+
         </Card>
     </Col>
     )

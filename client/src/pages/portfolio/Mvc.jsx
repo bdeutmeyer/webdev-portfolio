@@ -18,26 +18,31 @@ export default function MvcTechBlog() {
                         src={mvcBlogImg}
                         className='w-100 h-auto'
                     />
-                    {mvcHover ? <CardImgOverlay className="card-hover p-2">
-                        <CardLink href="https://howling-cat-95332-946fe14771a2.herokuapp.com/">
-                            <CardTitle tag="h5">
-                                MVC tech blog site
-                            </CardTitle>
-                        </CardLink>
-                        <CardLink href="https://github.com/bdeutmeyer/mvc-tech-blog">
-                            <img src={ghLogo} alt="GitHub Icon" />
-                        </CardLink>
-                        <a href="#" id="aboutMvcBlog">
-                            <img src={infoI} alt="Info" className='w-25' /></a>
-                        <Tooltip
-                            autohide
-                            isOpen={mvcTooltip}
-                            target="aboutMvcBlog"
-                            toggle={toggleMvc}
-                        >
-                            Hello world!
-                        </Tooltip>
-                    </CardImgOverlay> : <CardImgOverlay id="aboutMvcBlog"></CardImgOverlay>}
+                    <div className='container p-3'>
+                        {mvcHover ?
+                            <CardImgOverlay className="row card-hover">
+                                <CardLink href="https://howling-cat-95332-946fe14771a2.herokuapp.com/" className='row text-decoration-none'>
+                                    <CardTitle tag="h5" className='text-black fw-bold fs-4 spectral pt-3 border border-black rounded'>
+                                        MVC tech blog site
+                                    </CardTitle>
+                                </CardLink>
+                                <div className='row'>
+                                    <CardLink href="https://github.com/bdeutmeyer/mvc-tech-blog" className='col w-25'>
+                                        <img src={ghLogo} alt="GitHub Icon" />
+                                    </CardLink>
+                                    <a href="#" id="aboutMvcBlog" className='col w-25'>
+                                        <img src={infoI} alt="Info" className='w-25' /></a>
+                                    <Tooltip
+                                        autohide
+                                        isOpen={mvcTooltip}
+                                        target="aboutMvcBlog"
+                                        toggle={toggleMvc}
+                                    >
+                                        The MVC Tech Blog is my very first full-stack application built from scratch! It utilizes Handlebars, Bootstrap CSS, JavaScript, Node.js, Express.js, Sequelize, and mySql.
+                                    </Tooltip>
+                                </div>
+                            </CardImgOverlay> : <CardImgOverlay id="aboutMvcBlog"></CardImgOverlay>}
+                    </div>
                     {/* </Tooltip> */}
 
                 </Card>

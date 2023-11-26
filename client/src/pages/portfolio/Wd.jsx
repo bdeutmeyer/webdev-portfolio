@@ -17,16 +17,18 @@ export default function WeatherDashboard() {
                 src={weatherDashboardImg}
                 className='w-100 h-auto'
             />
-            {wdHover ? <CardImgOverlay className="card-hover p-2">
-                <CardLink href="https://bdeutmeyer.github.io/weather-dashboard/">
-                    <CardTitle tag="h5">
+            <div className='container p-3'>
+            {wdHover ? <CardImgOverlay className="row card-hover">
+                <CardLink href="https://bdeutmeyer.github.io/weather-dashboard/" className='row text-decoration-none'>
+                    <CardTitle tag="h5" className='text-black fw-bold fs-4 spectral pt-3 border border-black rounded'>
                         Weather Dashboard site
                     </CardTitle>
                 </CardLink>
-                <CardLink href="https://github.com/bdeutmeyer/weather-dashboard">
+                <div className='row'>
+                <CardLink href="https://github.com/bdeutmeyer/weather-dashboard" className='col w-25'>
                     <img src={ghLogo} alt="GitHub Icon" />
                 </CardLink>
-                <a href="#" id="aboutWD">
+                <a href="#" id="aboutWD" className='col w-25'>
                     <img src={infoI} alt="Info" className='w-25' /></a>
                 <Tooltip
                     autohide
@@ -34,9 +36,13 @@ export default function WeatherDashboard() {
                     target="aboutWD"
                     toggle={toggleWD}
                 >
-                    Hello world!
+                    The Weather Dashboard site was my first project utilizing data fetched from a third-party API (OpenWeather API). It was also my first excursion into the exciting worlds of Day.js, Bootstrap CSS, and custom color palettes!
                 </Tooltip>
+                </div>
+
             </CardImgOverlay> : <CardImgOverlay id="aboutWD"></CardImgOverlay>}
+            </div>
+  
         </Card>
     </Col>
     )
