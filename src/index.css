@@ -1,6 +1,9 @@
 #body {
   background-color: #B7B7A4;
 }
+.test:hover {
+  opacity: 0.5;
+}
 
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
