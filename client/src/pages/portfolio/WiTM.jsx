@@ -3,10 +3,14 @@ import witmImg from '../../assets/images/witm-screenshot.png';
 import ghLogo from '../../assets/logos/github-mark.svg';
 import infoI from '../../assets/logos/info-solid.svg';
 import { Card, CardImg, CardImgOverlay, CardTitle, CardLink, Col, Tooltip } from 'reactstrap';
+import { Modal, ModalHeader, ModalBody } from 'reactstrap';
 
 export default function WhatsInThisMeal() {
-    const [witmTooltip, setWitmTooltip] = useState(false);
-    const toggleWITM = () => setWitmTooltip(!witmTooltip);
+    // const [witmTooltip, setWitmTooltip] = useState(false);
+    // const toggleWITM = () => setWitmTooltip(!witmTooltip);
+    // const [witmHover, setWitmHover] = useState(false);
+    const [witmModal, setWitmModal] = useState(false);
+    const toggleWitm = () => setWitmModal(!witmModal);
     const [witmHover, setWitmHover] = useState(false);
 
     return (
@@ -28,16 +32,24 @@ export default function WhatsInThisMeal() {
                 <CardLink href="https://github.com/bdeutmeyer/nutrition-getter" className='col w-25'>
                     <img src={ghLogo} alt="GitHub Icon" />
                 </CardLink>
-                <a href="#" id="aboutWiTM" className='col w-25'>
-                    <img src={infoI} alt="Info" className='w-25' /></a>
-                <Tooltip
+                {/* <a href="#" id="aboutWiTM" className='col w-25'>
+                    <img src={infoI} alt="Info" className='w-25' /></a> */}
+                {/* <Tooltip
                     autohide
                     isOpen={witmTooltip}
                     target="aboutWiTM"
                     toggle={toggleWITM}
                 >
                     The "What's in this Meal?" site utilizes dynamically rendered elements and third-party APIs (Edamam). It is styled using Tailwind CSS. This was a group endeavor; my teammates were <a href="https://github.com/jwhit-commit">Joshua Whitaker</a>, <a href="https://github.com/lopezivan763">Ivan Lopez</a>, and <a href="https://github.com/maxblaul">Max Blaul</a>.
-                </Tooltip>
+                </Tooltip> */}
+                                <a href="#" id="aboutWiTM" className='col w-25'onClick={toggleWitm}>
+                    <img src={infoI} alt="Info" className='w-25' /></a>
+                    <Modal isOpen={witmModal} toggle={toggleWitm}>
+                                <ModalHeader toggle={toggleWitm}>About the What's in This Meal? site</ModalHeader>
+                                <ModalBody>
+                                The "What's in this Meal?" site utilizes dynamically rendered elements and third-party APIs (Edamam). It is styled using Tailwind CSS. This was a group endeavor; my teammates were <a href="https://github.com/jwhit-commit">Joshua Whitaker</a>, <a href="https://github.com/lopezivan763">Ivan Lopez</a>, and <a href="https://github.com/maxblaul">Max Blaul</a>.
+                                </ModalBody>
+                            </Modal>
                 </div>
             </CardImgOverlay> : <CardImgOverlay id="aboutWiTM"></CardImgOverlay>}
             </div>
