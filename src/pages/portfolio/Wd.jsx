@@ -22,7 +22,7 @@ export default function WeatherDashboard() {
                     className='w-100 h-auto'
                 />
                 <div className='container p-3'>
-                    {wdHover ? <CardImgOverlay className="row card-hover">
+                    {wdHover ? (<CardImgOverlay className="row card-hover">
                         <CardLink href="https://bdeutmeyer.github.io/weather-dashboard/" className='row text-decoration-none'>
                             <CardTitle tag="h5" className='text-black fw-bold fs-4 spectral pt-3 border border-black rounded'>
                                 Weather Dashboard site
@@ -52,7 +52,7 @@ export default function WeatherDashboard() {
                             </Modal>
                         </div>
 
-                    </CardImgOverlay> : <CardImgOverlay id="aboutWD"></CardImgOverlay>}
+                    </CardImgOverlay>) : (<CardImgOverlay id="aboutWD"></CardImgOverlay>)}
                 </div>
 
             </Card>
