@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App.jsx';
 import About from './pages/About.jsx';
-import Portfolio from './pages/portfolio/index.jsx';
+import Portfolio from './pages/portfolio/Portfolio.jsx';
 import Resume from './pages/Resume.jsx';
 import Contact from './pages/contact/index.jsx';
 import 'bootstrap/dist/css/bootstrap.css';
