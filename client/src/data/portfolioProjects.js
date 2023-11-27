@@ -1,6 +1,9 @@
 import mvcBlogImg from '../assets/images/mvc-tech-blog-screenshot.png'
 import goImg from '../assets/images/GAME-ON-screenshot.png'
 import wdImg from '../assets/images/weather-dashboard-screenshot.png'
+import witmImg from '../assets/images/WitM-screenshot.png'
+import ntImg from '../assets/images/note-taker-screenshot.png'
+import jsqImg from '../assets/images/js-quiz-screenshot.png'
 
 const portfolioProjects = [
     {
@@ -50,7 +53,7 @@ const portfolioProjects = [
     },
     {
         id: 4,
-        imagePath: '../../assets/images/witm-screenshot.png',
+        imagePath: witmImg,
         imageAlt: 'Screenshot of What\'s in This Meal? site',
         liveLink: 'https://bdeutmeyer.github.io/nutrition-getter/',
         siteTitle: 'What\'s in This Meal? site',
@@ -65,7 +68,7 @@ const portfolioProjects = [
     },
     {
         id: 5,
-        imagePath: '../../assets/images/note-taker-screenshot.png',
+        imagePath: ntImg,
         imageAlt: 'Screenshot of Note Taker site',
         liveLink: 'https://lit-ridge-70963-de8199e02790.herokuapp.com/',
         siteTitle: 'Note Taker site',
@@ -80,7 +83,7 @@ const portfolioProjects = [
     },
     {
         id: 6,
-        imagePath: '../../assets/images/js-quiz-screenshot.png',
+        imagePath: jsqImg,
         imageAlt: 'Screenshot of JavaScript Quiz site',
         liveLink: 'https://bdeutmeyer.github.io/javascript-quiz//',
         siteTitle: 'JavaScript Quiz site',
