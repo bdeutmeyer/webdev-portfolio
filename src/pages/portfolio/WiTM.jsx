@@ -22,7 +22,7 @@ export default function WhatsInThisMeal() {
                 className='w-100 h-auto'
             />
             <div className='container p-3'>
-            {witmHover ? <CardImgOverlay className="row card-hover">
+            {witmHover ? (<CardImgOverlay className="row card-hover">
                 <CardLink href="https://bdeutmeyer.github.io/nutrition-getter/" className='row text-decoration-none'>
                     <CardTitle tag="h5" className='text-black fw-bold fs-4 spectral pt-3 border border-black rounded'>
                         What's in This Meal? site
@@ -51,7 +51,7 @@ export default function WhatsInThisMeal() {
                                 </ModalBody>
                             </Modal>
                 </div>
-            </CardImgOverlay> : <CardImgOverlay id="aboutWiTM"></CardImgOverlay>}
+            </CardImgOverlay>) : (<CardImgOverlay id="aboutWiTM"></CardImgOverlay>)}
             </div>
 
         </Card>

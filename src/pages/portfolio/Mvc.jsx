@@ -25,7 +25,7 @@ export default function MvcTechBlog() {
                     />
                     <div className='container p-3'>
                         {mvcHover ?
-                            <CardImgOverlay className="row card-hover">
+                            (<CardImgOverlay className="row card-hover">
                                 <CardLink href="https://howling-cat-95332-946fe14771a2.herokuapp.com/" className='row text-decoration-none'>
                                     <CardTitle tag="h5" className='text-black fw-bold fs-4 spectral pt-3 border border-black rounded'>
                                         MVC tech blog site
@@ -54,7 +54,7 @@ export default function MvcTechBlog() {
                                         </ModalBody>
                                     </Modal>
                                 </div>
-                            </CardImgOverlay> : <CardImgOverlay id="aboutMvcBlog"></CardImgOverlay>}
+                            </CardImgOverlay>) : (<CardImgOverlay id="aboutMvcBlog"></CardImgOverlay>)}
                     </div>
                     {/* </Tooltip> */}
 

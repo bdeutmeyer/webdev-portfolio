@@ -21,7 +21,7 @@
 //                     className='w-100 h-auto'
 //                 />
 //                 <div className='container p-3'>
-//                 {projectHover ? <CardImgOverlay className="row card-hover">
+//                 {projectHover ? (<CardImgOverlay className="row card-hover">
 //                     <CardLink href={detail.liveLink} className='row text-decoration-none'>
 //                         <CardTitle tag="h5" className='text-black fw-bold fs-4 spectral pt-3 border border-black rounded'>
 //                             {detail.siteTitle}
@@ -42,7 +42,7 @@
 //                         {detail.tooltipText}
 //                     </Tooltip>
 //                     </div>
-//                 </CardImgOverlay> : <CardImgOverlay id={detail.targetId}></CardImgOverlay>}
+//                 </CardImgOverlay>) : (<CardImgOverlay id={detail.targetId}></CardImgOverlay>)}
 //                 </div>
 
 //             </Card>

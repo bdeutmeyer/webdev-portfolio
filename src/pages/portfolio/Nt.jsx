@@ -22,7 +22,7 @@ export default function NoteTaker() {
                     className='w-100 h-auto'
                 />
                 <div className='container p-3'>
-                    {ntHover ? <CardImgOverlay className="row card-hover">
+                    {ntHover ? (<CardImgOverlay className="row card-hover">
                         <CardLink href="https://lit-ridge-70963-de8199e02790.herokuapp.com/" className='row text-decoration-none'>
                             <CardTitle tag="h5" className='text-black fw-bold fs-4 spectral pt-3 border border-black rounded'>
                                 Note Taker site
@@ -51,7 +51,7 @@ export default function NoteTaker() {
                                 </ModalBody>
                             </Modal>
                         </div>
-                    </CardImgOverlay> : <CardImgOverlay id="aboutNT"></CardImgOverlay>}
+                    </CardImgOverlay>) : (<CardImgOverlay id="aboutNT"></CardImgOverlay>)}
                 </div>
 
             </Card>

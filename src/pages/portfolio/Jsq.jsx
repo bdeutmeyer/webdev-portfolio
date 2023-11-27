@@ -22,7 +22,7 @@ export default function JavaScriptQuiz() {
                     className='w-100 h-auto'
                 />
                 <div className='container p-3'>
-                    {jsqHover ? <CardImgOverlay className="row card-hover">
+                    {jsqHover ? (<CardImgOverlay className="row card-hover">
                         <CardLink href="https://bdeutmeyer.github.io/javascript-quiz//" className='row text-decoration-none'>
                             <CardTitle tag="h5" className='text-black fw-bold fs-4 spectral pt-3 border border-black rounded'>
                                 JavaScript Quiz site
@@ -51,7 +51,7 @@ export default function JavaScriptQuiz() {
                                 </ModalBody>
                             </Modal>
                         </div>
-                    </CardImgOverlay> : <CardImgOverlay id="aboutJSQ"></CardImgOverlay>}
+                    </CardImgOverlay>) : (<CardImgOverlay id="aboutJSQ"></CardImgOverlay>)}
                 </div>
 
             </Card>
