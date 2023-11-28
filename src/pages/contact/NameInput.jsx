@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { FormGroup, Label, Input, FormFeedback } from "reactstrap";
 
+//Name input
 export default function NameInput() {
     const [nameInputValue, setNameInputValue] = useState('');
     const [nameInputOk, setNameInputOk] = useState(false);
@@ -20,7 +21,7 @@ export default function NameInput() {
             Name
         </Label>
         <Input
-            className={`form-control ${nameBlur && (nameInputOk ? 'is-valid' : 'is-invalid')}`}
+            className={`${nameBlur && (nameInputOk ? 'is-valid' : 'is-invalid')}`}
             id="contactName"
             name="contactName"
             placeholder="Name"

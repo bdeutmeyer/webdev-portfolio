@@ -3,6 +3,7 @@ import 'animate.css'
 import ghLogo from '../assets/logos/github-mark.svg'
 import liLogo from '../assets/logos/linkedin-icon.png'
 
+//Footer section
 function Footer() {
     const [ghLogoHover, setGhLogoHover] = useState(false);
     const [liLogoHover, setLiLogoHover] = useState(false);

@@ -3,6 +3,7 @@ import NameInput from './NameInput';
 import EmailInput from './EmailInput';
 import MessageInput from './MessageInput';
 
+//Contact page
 export default function Contact() {
     return (
         <>

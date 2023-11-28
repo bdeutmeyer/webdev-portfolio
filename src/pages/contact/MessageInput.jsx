@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { FormGroup, Label, Input, FormFeedback } from "reactstrap";
 
+//Message input
 export default function MessageInput() {
     const [msgInputValue, setMsgInputValue] = useState('');
     const [msgInputOk, setMsgInputOk] = useState(false);
@@ -10,9 +11,7 @@ export default function MessageInput() {
         setMsgInputValue(msgInpV)
         setMsgInputOk(msgInpV.length > 0 ? true : false)
     }
-    const handleMsgInputBlur = () => {
-        setMsgBlur(true)
-    }
+    const handleMsgInputBlur = () => {setMsgBlur(true)}
 
     return (
         <FormGroup className="text-start">
@@ -20,7 +19,7 @@ export default function MessageInput() {
                 Message
             </Label>
             <Input
-                className={`form-control ${msgBlur && (msgInputOk ? 'is-valid' : 'is-invalid')}`}
+                className={`${msgBlur && (msgInputOk ? 'is-valid' : 'is-invalid')}`}
                 id="contactMessage"
                 name="contactMessage"
                 placeholder="Message for Beth"

@@ -5,6 +5,7 @@ import witmImg from '../assets/images/WitM-screenshot.png'
 import ntImg from '../assets/images/note-taker-screenshot.png'
 import jsqImg from '../assets/images/js-quiz-screenshot.png'
 
+//Portfolio project data
 const portfolioProjects = [
     {
         id: 1,

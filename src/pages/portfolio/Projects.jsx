@@ -1,6 +1,7 @@
 import ghLogo from '../../assets/logos/github-mark.svg';
 import { Card, CardImg, CardText, CardImgOverlay, CardTitle, CardLink, Col, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
+//Project cards
 export default function Projects(props) {
     return (
         <>

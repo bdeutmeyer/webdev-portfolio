@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import NavBar from './NavBar'
 
+//Navigation links
 export default function Navigation() {
     const [currentPage, setCurrentPage] = useState('/');
     

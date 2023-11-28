@@ -1,5 +1,6 @@
 import resumePdf from '../assets/Beth_Deutmeyer_resume.pdf'
 
+//Resume page
 export default function Resume() {
 
    return (

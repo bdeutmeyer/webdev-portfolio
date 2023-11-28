@@ -3,6 +3,7 @@ import { Container, Row } from 'reactstrap';
 import Projects from './Projects'
 import portfolioProjects from '../../data/portfolioProjects';
 
+//Portfolio page
 export default function Portfolio() {
     return (
         <>
