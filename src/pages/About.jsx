@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import headshot from '../assets/images/Beth.jpg'
 
+//About Me page
 export default function About() {
     return (
         <>

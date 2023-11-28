@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { FormGroup, Label, Input, FormFeedback } from "reactstrap";
 
+//Email input section
 export default function EmailInput() {
     const [emailInputValue, setEmailInputValue] = useState('');
     const [emailInputOk, setEmailInputOk] = useState(false);
@@ -21,7 +22,7 @@ export default function EmailInput() {
                 Email
             </Label>
             <Input
-                className={`form-control ${emailBlur && (emailInputOk ? 'is-valid' : 'is-invalid')}`}
+                className={`${emailBlur && (emailInputOk ? 'is-valid' : 'is-invalid')}`}
                 id="contactEmail"
                 name="contactEmail"
                 placeholder="email@example.com"
