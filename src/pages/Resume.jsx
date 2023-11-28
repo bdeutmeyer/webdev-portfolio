@@ -6,7 +6,7 @@ export default function Resume() {
       <>
          <h3 className='m-4 fw-bold'>Resume</h3>
          <hr />
-         <p>Skills:     HTML   |   CSS   |   JavaScript   |   SQL   |   NoSQL   |   MERN (Mongo.db, Express.js, React, Node.js)</p>
+         <p>Skills:     HTML | CSS | JavaScript | APIs | ORM/ODM | GraphQL | mySQL | MERN (Mongo.db, Express.js, React, Node.js)</p>
          <hr />
          <br />
          <p>Download full resume:</p>

@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import NavBar from './NavBar'
-// useParams from react-router-dom - should fix refresh problem?
-function Navigation() {
+
+export default function Navigation() {
     const [currentPage, setCurrentPage] = useState('/');
     
     return (
@@ -24,5 +24,3 @@ function Navigation() {
         />
     );
 }
-
-export default Navigation;

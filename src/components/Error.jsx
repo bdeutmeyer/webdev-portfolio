@@ -1,7 +1,7 @@
 export default function() {
     return (
-        <div>
-            404: Page not found
-        </div>
+<h2>
+    Sorry! This page does not exist.
+</h2>
     );
 }

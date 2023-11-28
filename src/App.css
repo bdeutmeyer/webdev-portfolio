@@ -1,37 +1,23 @@
 * {
   font-family: 'Montserrat', sans-serif;
-  /* background-color: var(--latte); */
+
 }
-
-
 
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  
 }
 
 :root {
-  --buck: #cb997e;
-  --taupe: #DDBEA9;
-  --latte: #FFE8D6;
   --lightsage: #B7B7A4;
   --lightersage: #e2e2d4;
-  --sage: #A5A58D;
   --forest: #6B705C;
-  --creamy: #fbf6f6;
-
 }
 
 .spectral {
   font-family: 'Spectral SC', serif;
-}
-
-.hidden-link:hover {
-  font-weight: bolder;
-  box-shadow: 4px;
 }
 
 .header-section {
