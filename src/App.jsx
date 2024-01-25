@@ -7,12 +7,16 @@ import Footer from './components/Footer'
 //Parent section
 function App() {
   return (
-    <>
-      <Header />
-      <Navigation />
-      <Outlet />
+    <div id="content">
+      <div id="nf-wrap">
+        <div id="non-footer">
+          <Header />
+          <Navigation />
+          <Outlet />
+        </div>
+      </div>
       <Footer />
-    </>
+    </div>
   );
 }
 
